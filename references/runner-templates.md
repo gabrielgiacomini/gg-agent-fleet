@@ -12,7 +12,7 @@ rebuilding runner scaffolding.
 ### ESLint JSON route
 
 ```bash
-npx tsx skills/agent-fleet/scripts/generate-eslint-agent-fleet-pack.ts \
+npx tsx .agents/skills/agent-fleet/scripts/generate-eslint-agent-fleet-pack.ts \
   --purpose <purpose-slug> \
   --input <package>=<eslint-json> \
   --parallel package
@@ -21,7 +21,7 @@ npx tsx skills/agent-fleet/scripts/generate-eslint-agent-fleet-pack.ts \
 For one-file-per-task documentation packs, use bounded parallelism:
 
 ```bash
-npx tsx skills/agent-fleet/scripts/generate-eslint-agent-fleet-pack.ts \
+npx tsx .agents/skills/agent-fleet/scripts/generate-eslint-agent-fleet-pack.ts \
   --purpose jsdoc-required-symbol-docs \
   --input <package>=<eslint-json> \
   --include-warnings \
@@ -35,7 +35,7 @@ npx tsx skills/agent-fleet/scripts/generate-eslint-agent-fleet-pack.ts \
 
 ```bash
 npm run eslint:inventory
-npx tsx skills/agent-fleet/scripts/generate-eslint-inventory-agent-fleet-pack.ts \
+npx tsx .agents/skills/agent-fleet/scripts/generate-eslint-inventory-agent-fleet-pack.ts \
   --inventory-root .eslint-inventory/generated \
   --purpose eslint-inventory-cleanup \
   --severity all \
@@ -45,7 +45,7 @@ npx tsx skills/agent-fleet/scripts/generate-eslint-inventory-agent-fleet-pack.ts
 ### Generic manifest route for non-ESLint work
 
 ```bash
-npx tsx skills/agent-fleet/scripts/generate-manifest-agent-fleet-pack.ts \
+npx tsx .agents/skills/agent-fleet/scripts/generate-manifest-agent-fleet-pack.ts \
   --manifest .tmp/<purpose>-agent-fleet-pack-manifest.json
 ```
 

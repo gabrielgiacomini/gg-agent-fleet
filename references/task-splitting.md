@@ -11,7 +11,7 @@ Choose the generation route by input type:
 1. **ESLint JSON route** — when diagnostics are available as ESLint JSON, use:
 
    ```bash
-   npx tsx skills/agent-fleet/scripts/generate-eslint-agent-fleet-pack.ts \
+   npx tsx .agents/skills/agent-fleet/scripts/generate-eslint-agent-fleet-pack.ts \
      --purpose <purpose-slug> \
      --input <package>=<eslint-json> \
      --parallel package
@@ -22,7 +22,7 @@ Choose the generation route by input type:
 
    ```bash
    npm run eslint:inventory
-   npx tsx skills/agent-fleet/scripts/generate-eslint-inventory-agent-fleet-pack.ts \
+   npx tsx .agents/skills/agent-fleet/scripts/generate-eslint-inventory-agent-fleet-pack.ts \
      --inventory-root .eslint-inventory/generated \
      --purpose eslint-inventory-cleanup \
      --severity all \
@@ -33,7 +33,7 @@ Choose the generation route by input type:
    structured task list, create a small manifest and use:
 
    ```bash
-   npx tsx skills/agent-fleet/scripts/generate-manifest-agent-fleet-pack.ts \
+   npx tsx .agents/skills/agent-fleet/scripts/generate-manifest-agent-fleet-pack.ts \
      --manifest .tmp/<purpose>-agent-fleet-pack-manifest.json
    ```
 

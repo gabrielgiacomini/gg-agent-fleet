@@ -10,14 +10,14 @@
  *
  * @example
  * ```bash
- * npx tsx skills/agent-fleet/scripts/generate-eslint-agent-fleet-pack.ts \
+ * npx tsx .agents/skills/agent-fleet/scripts/generate-eslint-agent-fleet-pack.ts \
  *   --purpose overnight-lint-react-ts-cleanup \
  *   --input core-package=.tmp/gate-reports/lint-json/core-package-current.json \
  *   --input ui-package=.tmp/gate-reports/lint-json/ui-package-current.json \
  *   --exclude-rule @typescript-eslint/no-empty-object-type
  * ```
  *
- * @testing CLI: npx tsx skills/agent-fleet/scripts/generate-eslint-agent-fleet-pack.ts --help
+ * @testing CLI: npx tsx .agents/skills/agent-fleet/scripts/generate-eslint-agent-fleet-pack.ts --help
  * @see skills/agent-fleet/scripts/agent-fleet-pack-lib.ts - Shared pack writer utilities.
  * @see skills/agent-fleet/references/task-splitting.md - Task-boundary rules mirrored by this script.
  * @documentation reviewed=2026-05-06 standard=FILE_OVERVIEW_STANDARDS_TYPESCRIPT@3
@@ -448,7 +448,7 @@ function printHelpAndExit(): never {
   console.log(`Generate a runnable Agent Fleet pack from ESLint JSON reports.
 
 Usage:
-  npx tsx skills/agent-fleet/scripts/generate-eslint-agent-fleet-pack.ts \\
+  npx tsx .agents/skills/agent-fleet/scripts/generate-eslint-agent-fleet-pack.ts \\
     --purpose overnight-lint-react-ts-cleanup \\
     --input core-package=.tmp/gate-reports/lint-json/core-package-current.json \\
     --input ui-package=.tmp/gate-reports/lint-json/ui-package-current.json

@@ -12,11 +12,11 @@
  *
  * @example
  * ```bash
- * npx tsx skills/agent-fleet/scripts/generate-manifest-agent-fleet-pack.ts \
+ * npx tsx .agents/skills/agent-fleet/scripts/generate-manifest-agent-fleet-pack.ts \
  *   --manifest .tmp/agent-fleet-pack-manifest.json
  * ```
  *
- * @testing CLI: npx tsx skills/agent-fleet/scripts/generate-manifest-agent-fleet-pack.ts --help
+ * @testing CLI: npx tsx .agents/skills/agent-fleet/scripts/generate-manifest-agent-fleet-pack.ts --help
  * @see skills/agent-fleet/scripts/agent-fleet-pack-lib.ts - Shared pack writer utilities.
  * @see skills/agent-fleet/references/prompt-schema.md - Prompt sections rendered by this generator.
  * @documentation reviewed=2026-05-13 standard=FILE_OVERVIEW_STANDARDS_TYPESCRIPT@3
@@ -375,7 +375,7 @@ function printHelpAndExit(): never {
   console.log(`Generate a runnable Agent Fleet pack from a generic JSON manifest.
 
 Usage:
-  npx tsx skills/agent-fleet/scripts/generate-manifest-agent-fleet-pack.ts \\
+  npx tsx .agents/skills/agent-fleet/scripts/generate-manifest-agent-fleet-pack.ts \\
     --manifest .tmp/agent-fleet-pack-manifest.json
 
 Manifest shape:

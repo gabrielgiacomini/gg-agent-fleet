@@ -12,13 +12,13 @@
  *
  * @example
  * ```bash
- * npx tsx skills/agent-fleet/scripts/generate-eslint-inventory-agent-fleet-pack.ts \
+ * npx tsx .agents/skills/agent-fleet/scripts/generate-eslint-inventory-agent-fleet-pack.ts \
  *   --inventory-root .eslint-inventory/generated \
  *   --purpose eslint-inventory-cleanup \
  *   --severity all
  * ```
  *
- * @testing CLI: npx tsx skills/agent-fleet/scripts/generate-eslint-inventory-agent-fleet-pack.ts --help
+ * @testing CLI: npx tsx .agents/skills/agent-fleet/scripts/generate-eslint-inventory-agent-fleet-pack.ts --help
  * @see scripts/eslint-inventory/generate.ts - Produces the generated inventory markdown consumed by this CLI.
  * @see skills/agent-fleet/scripts/agent-fleet-pack-lib.ts - Shared pack writer utilities.
  * @documentation reviewed=2026-05-06 standard=FILE_OVERVIEW_STANDARDS_TYPESCRIPT@3
@@ -487,7 +487,7 @@ function printHelpAndExit(): never {
   console.log(`Generate a runnable Agent Fleet pack from .eslint-inventory generated markdown.
 
 Usage:
-  npx tsx skills/agent-fleet/scripts/generate-eslint-inventory-agent-fleet-pack.ts \\
+  npx tsx .agents/skills/agent-fleet/scripts/generate-eslint-inventory-agent-fleet-pack.ts \\
     --inventory-root .eslint-inventory/generated \\
     --purpose eslint-inventory-cleanup \\
     --severity all

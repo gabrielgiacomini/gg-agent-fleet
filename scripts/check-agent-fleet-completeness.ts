@@ -6,7 +6,7 @@
  * Verifies an Agent Fleet task pack against the 8-item Agent Fleet Quality Checklist.
  * 
  * Usage:
- *   npx tsx skills/agent-fleet/scripts/check-agent-fleet-completeness.ts --tasks <count>
+ *   npx tsx .agents/skills/agent-fleet/scripts/check-agent-fleet-completeness.ts --tasks <count>
  */
 
 import { argv } from "process";

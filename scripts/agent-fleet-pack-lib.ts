@@ -12,7 +12,7 @@
  * When readability work extracts new modules, prompts require semantic, domain-specific filenames and thin
  * compatibility facades instead of generic `helpers.ts`, `batch-01`, `segment-03`, or concern-list parking lots.
  *
- * @testing CLI: npx tsx skills/agent-fleet/scripts/generate-eslint-agent-fleet-pack.ts --help
+ * @testing CLI: npx tsx .agents/skills/agent-fleet/scripts/generate-eslint-agent-fleet-pack.ts --help
  * @see skills/agent-fleet/SKILL.md - Skill guidance that directs agents to these scripts.
  * @see skills/agent-fleet/references/runner-templates.md - Shell runner conventions mirrored by this generator.
  * @documentation reviewed=2026-05-13 standard=FILE_OVERVIEW_STANDARDS_TYPESCRIPT@3

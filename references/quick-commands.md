@@ -32,7 +32,7 @@ agent -p --trust --force --model composer-2 --workspace "$PWD" \
 ## Route A — ESLint JSON, package-parallel
 
 ```bash
-npx tsx skills/agent-fleet/scripts/generate-eslint-agent-fleet-pack.ts \
+npx tsx .agents/skills/agent-fleet/scripts/generate-eslint-agent-fleet-pack.ts \
   --purpose overnight-lint-react-ts-cleanup \
   --input core-package=.tmp/gate-reports/lint-json/core-package-current.json \
   --input ui-package=.tmp/gate-reports/lint-json/ui-package-current.json \
@@ -44,7 +44,7 @@ npx tsx skills/agent-fleet/scripts/generate-eslint-agent-fleet-pack.ts \
 
 ```bash
 npm run eslint:inventory
-npx tsx skills/agent-fleet/scripts/generate-eslint-inventory-agent-fleet-pack.ts \
+npx tsx .agents/skills/agent-fleet/scripts/generate-eslint-inventory-agent-fleet-pack.ts \
   --inventory-root .eslint-inventory/generated \
   --purpose eslint-inventory-cleanup \
   --severity all
@@ -55,7 +55,7 @@ npx tsx skills/agent-fleet/scripts/generate-eslint-inventory-agent-fleet-pack.ts
 One file per task, bounded at 10 total / 4 per package / 10s launch gap.
 
 ```bash
-npx tsx skills/agent-fleet/scripts/generate-eslint-agent-fleet-pack.ts \
+npx tsx .agents/skills/agent-fleet/scripts/generate-eslint-agent-fleet-pack.ts \
   --purpose jsdoc-required-symbol-docs \
   --input root=.tmp/gate-reports/lint-json/root-jsdoc.json \
   --package-path root=. \
@@ -70,7 +70,7 @@ npx tsx skills/agent-fleet/scripts/generate-eslint-agent-fleet-pack.ts \
 ## Route C — Generic manifest for non-ESLint packs
 
 ```bash
-npx tsx skills/agent-fleet/scripts/generate-manifest-agent-fleet-pack.ts \
+npx tsx .agents/skills/agent-fleet/scripts/generate-manifest-agent-fleet-pack.ts \
   --manifest .tmp/agent-fleet-pack-manifest.json
 ```
 

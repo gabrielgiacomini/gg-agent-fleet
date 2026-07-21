@@ -239,7 +239,7 @@ When the task inventory comes from ESLint JSON, use the ESLint generator instead
 reconstructing runner scaffolding from memory:
 
 ```bash
-npx tsx skills/agent-fleet/scripts/generate-eslint-agent-fleet-pack.ts \
+npx tsx .agents/skills/agent-fleet/scripts/generate-eslint-agent-fleet-pack.ts \
   --purpose <purpose-slug> \
   --input <package>=<eslint-json> \
   --parallel package
@@ -261,7 +261,7 @@ inventory and use:
 
 ```bash
 npm run eslint:inventory
-npx tsx skills/agent-fleet/scripts/generate-eslint-inventory-agent-fleet-pack.ts \
+npx tsx .agents/skills/agent-fleet/scripts/generate-eslint-inventory-agent-fleet-pack.ts \
   --inventory-root .eslint-inventory/generated \
   --purpose eslint-inventory-cleanup \
   --severity all \
@@ -272,7 +272,7 @@ Use bounded parallelism for inventory-derived documentation packs or other clear
 one-file-per-task cleanup:
 
 ```bash
-npx tsx skills/agent-fleet/scripts/generate-eslint-inventory-agent-fleet-pack.ts \
+npx tsx .agents/skills/agent-fleet/scripts/generate-eslint-inventory-agent-fleet-pack.ts \
   --inventory-root .eslint-inventory/generated \
   --purpose eslint-inventory-docs-cleanup \
   --severity warning \
@@ -291,7 +291,7 @@ selected files include all findings in that file so focused verification can pas
 When work is not ESLint-specific, infer or ask for a manifest, then use:
 
 ```bash
-npx tsx skills/agent-fleet/scripts/generate-manifest-agent-fleet-pack.ts \
+npx tsx .agents/skills/agent-fleet/scripts/generate-manifest-agent-fleet-pack.ts \
   --manifest .tmp/<purpose>-agent-fleet-pack-manifest.json
 ```
 
